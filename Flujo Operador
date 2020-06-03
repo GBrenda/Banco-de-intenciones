@@ -1,0 +1,117 @@
+{
+  "flow": [
+{
+      "combinations": [
+        {
+          "intentions": [
+            "querer"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "deseo",
+            "none"
+          ]
+        },
+        {
+          "intentions": [
+            "haber"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "permiso",
+            "ubicacion",
+            "none"
+          ]
+        },
+        {
+          "intentions": [
+            "dar",
+            "pasar"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "permiso",
+            "ubicacion",
+            "obligacion",
+            "consecuencia",
+            "deseo",
+            "none"
+          ]
+        },
+        {
+          "intentions": [
+            "estar"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "ubicacion",
+            "none"
+          ]
+        },
+        {
+          "intentions": [
+            "hablar",
+            "transferir",
+            "pedir",
+            "none"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "deseo",
+            "permiso",
+            "ubicacion",
+            "modo",
+            "instrumento",
+            "none"
+          ]
+        },
+        {
+          "intentions": [
+            "ayudar"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "permiso",
+            "ubicacion",
+            "deseo",
+            "modo",
+            "obligacion",
+            "none"
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "block_id": "0000",
+          "clear_entities": [],
+          "clear_entities_nlp": [],
+          "condition": "@operador"
+        }
+      ],
+      "name": "nombre_flujo_numero"
+   }
+	],
+	"model": {
+		"entities": [
+		],
+		"intentions": [
+		],
+		"polarities": [
+			"positive"
+		],
+		"subintentions": [
+		]
+	}
+}
