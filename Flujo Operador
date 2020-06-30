@@ -4,43 +4,22 @@
       "combinations": [
         {
           "intentions": [
-            "querer"
+            "hablar",
+            "transferir",
+            "pedir",
+            "none"
           ],
           "polarities": [
             "positive"
           ],
           "subintentions": [
             "deseo",
-            "none"
-          ]
-        },
-        {
-          "intentions": [
-            "haber"
-          ],
-          "polarities": [
-            "positive"
-          ],
-          "subintentions": [
-            "permiso",
-            "ubicacion",
-            "none"
-          ]
-        },
-        {
-          "intentions": [
-            "dar",
-            "pasar"
-          ],
-          "polarities": [
-            "positive"
-          ],
-          "subintentions": [
-            "permiso",
-            "ubicacion",
+            "asunto",
             "obligacion",
-            "consecuencia",
-            "deseo",
+            "permiso",
+            "ubicacion",
+            "modo",
+            "instrumento",
             "none"
           ]
         },
@@ -58,20 +37,19 @@
         },
         {
           "intentions": [
-            "hablar",
-            "transferir",
-            "pedir",
-            "none"
+            "dar",
+            "pasar",
+            "haber"
           ],
           "polarities": [
             "positive"
           ],
           "subintentions": [
-            "deseo",
             "permiso",
+            "aplica",
             "ubicacion",
-            "modo",
-            "instrumento",
+            "obligacion",
+            "deseo",
             "none"
           ]
         },
@@ -90,10 +68,27 @@
             "obligacion",
             "none"
           ]
+          }
+// Si en tu nlp main o en un apartado superior del nlp donde colocarás estas intenciones ya existe una que tenga solo "querer-none", vas a tener que agregar esta misma al segmento de operador, ya que el bot la buscará y no encontrará coincidencias. Es mejor abstenerce de colocar el verbo querer solo. No te olvides de la coma.//
+        {
+          "intentions": [
+            "querer"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "none"
+          ]
         }
       ],
       "conditions": [
         {
+          "block_id": "0000",
+          "clear_entities": [],
+          "clear_entities_nlp": [],
+          "condition": "@operador and @implicita"
+        },{
           "block_id": "0000",
           "clear_entities": [],
           "clear_entities_nlp": [],
