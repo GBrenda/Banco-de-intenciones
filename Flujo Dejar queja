@@ -1,0 +1,75 @@
+{
+  "flow": [
+        {
+          "intentions": [
+            "compartir",
+            "dar",
+            "pasar",
+            "presentar",
+            "decir",
+            "levantar",
+            "quejar",
+            "dejar",
+            "poner",
+            "enviar",
+            "hacer",
+            "ingresar",
+            "tener",
+            "poseer"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "obligacion",
+            "deseo",
+            "permiso",
+            "modo",
+            "ubicacion",
+            "none"
+          ]
+        },
+        {
+      "combinations": [
+        {
+          "intentions": [
+            "querer",
+            "none"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "none"
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "block_id": "0000",
+          "clear_entities": [],
+          "clear_entities_nlp": [],
+          "condition": "@queja and @implicita"
+        },
+        {
+          "block_id": "0000",
+          "clear_entities": [],
+          "clear_entities_nlp": [],
+          "condition": "@queja"
+        }
+      ],
+      "name": "nombre_flujo_numero"
+    }
+	],
+	"model": {
+		"entities": [
+		],
+		"intentions": [
+		],
+		"polarities": [
+			"positive"
+		],
+		"subintentions": [
+		]
+	}
+}
