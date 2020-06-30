@@ -1,0 +1,82 @@
+{
+  "flow": [
+{
+      "combinations": [
+        {
+          "intentions": [
+            "ir",
+            "volver",
+            "compartir",
+            "dar",
+            "buscar",
+            "presentar",
+            "decir",
+            "ensenar",
+            "saber",
+            "ver",
+            "revisar"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "none",
+            "deseo",
+            "modo",
+            "obligacion",
+            "en",
+            "permiso",
+            "ubicacion"
+          ]
+        },
+        {
+          "intentions": [
+            "querer",
+            "ocupar",
+            "none"
+          ],
+          "polarities": [
+            "positive"
+          ],
+          "subintentions": [
+            "none"
+          ]
+        },
+        {
+		     	"intentions": [
+				    "ser",
+				    "estar"
+		    	],
+			    "polarities": [
+				     "positive"
+			    ],
+		    	"subintentions": [
+			    	"none",
+				    "ubicacion",
+            "seleccion"
+			]
+		  }
+      ],
+      "conditions": [
+        {
+          "block_id": "0000",
+          "clear_entities": [],
+          "clear_entities_nlp": [],
+          "condition": "@menu"
+        }
+      ],
+      "name": "nombre_flujo_numero"
+    }
+	],
+	"model": {
+		"entities": [
+		],
+		"intentions": [
+		],
+		"polarities": [
+			"positive"
+		],
+		"subintentions": [
+		]
+	}
+}
