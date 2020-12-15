@@ -47,18 +47,15 @@
       "conditions": [
         {
           "block_id": "0000",
-          "clear_entities": [],
+          "clear_entities": ["@queja"],
           "clear_entities_nlp": [],
-          "condition": "@queja and @implicita"
-        },
-        {
-          "block_id": "0000",
-          "clear_entities": [],
-          "clear_entities_nlp": [],
-          "condition": "@queja"
+          "condition": "@queja",
+	  "entity_injection": {
+            "@flagNLP_Queja": "flag"
+          }
         }
       ],
-      "name": "nombre_flujo_numero"
+      "name": "flujo_nombre_numero"
     }
 	],
 	"model": {
